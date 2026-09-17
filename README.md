@@ -1,14 +1,43 @@
-## Machine Learning Project ##
-This project is created to track all of the machine learning projects
+# Machine Learning
 
-# Installing Dependencies #
-Use the below command to install the  required dependencies 
+A personal workspace for machine learning projects, experiments, and topic notes — covering fundamentals through applied projects.
 
---Create the virtual environment--
+## Structure
+
+```
+.
+├── projects/          # End-to-end ML projects (data → model → evaluation)
+│   └── firstProject.ipynb
+├── topicNotes/        # Concept notebooks (linear algebra, etc.)
+│   ├── dotproduct.ipynb
+│   └── matrix.ipynb
+├── datasets/          # Raw data files
+└── requirements.txt   # Python dependencies
+```
+
+## Setup
+
+**Python 3.x required.**
+
+```bash
+# Create and activate a virtual environment
 python -m venv .venv
+source .venv/bin/activate        # macOS/Linux
+# .venv\Scripts\activate         # Windows
 
---Activate the virtual environment--
-source .venv/bin/activate
-
---Install all of the dependencies from requirements.txt file --
+# Install dependencies
 pip install -r requirements.txt
+
+# Launch Jupyter
+jupyter notebook
+```
+
+## Dependencies
+
+| Package | Purpose |
+|---|---|
+| numpy, scipy | Numerical computing |
+| pandas | Data manipulation |
+| matplotlib, seaborn | Visualization |
+| scikit-learn | ML algorithms |
+| jupyter, ipykernel | Notebook environment |
